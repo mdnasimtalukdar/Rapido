@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8be5bad03d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./dist/output.css">
     <title>Rapido</title>
 </head>
 <body>
-    <main>
+    <main class="relative">
         <!-- Header Start -->
-        <header class="padding-x py-8 z-10 w-full">
+        <header class="padding-x xl:absolute py-8 z-10 w-full">
             <!-- Navbar -->
             <nav class="flex justify-between items-center max-container">
                 <a href="/">
@@ -43,9 +44,9 @@
         </header>
         <!-- Header End -->
         <!-- Hero Start -->
-        <section id="home" class=" w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container xl:padding-l">
+        <section id="home" class=" w-full flex xl:flex-row flex-col justify-center min-h-screen gap-20 max-container xl:padding-l ">
             <!-- Hero Text Content -->
-            <div class="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
+            <div class="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x xl:pt-60 md:pt-40">
                 <p class="text-xl font-montserrat text-coral-red font-bold">Our Winter Collection</p>
                 <h1 class="mt-8 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
                     <span class="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">The New Arrival</span>
@@ -55,7 +56,7 @@
                 <p class="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">Discover stylish Rapido Arrivals, quality comfort and innovation for your active life..</p>
                 <button class="flex items-center justify-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none bg-coral-red rounded-full text-white border-coral-red font-bold tracking-wider">
                     Buy Now
-                    <img src="./assets/icons/arrow-right.svg" alt="" class="ml-2 rounded-full w-5 h-5">
+                    <img src="./assets/icons/arrow-right.svg" alt="" class="rounded-full w-5 h-5 ml-2">
                 </button>
                 <div class="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
                     <div>
@@ -93,9 +94,58 @@
             <!-- Hero Images -->
         </section>
         <!-- Hero End -->
-        <section class="padding">
-            
+        <!-- Popular Product -->
+        <section class="padding max-container mt-40">
+            <div>
+                <div>
+                    <h2 class="text-3xl font-bold font-palanquin">Our Most <span class="text-coral-red">Popular</span> Product</h2>
+                    <p class="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-lg">Experience top-notch quality and style with our sought after selections Discover a world of comfort, Design and Value</p>
+                </div>
+                <div class="grid grid-cols-4 justify-items-center">
+                    <div>
+                        <img src="./assets/images/shoe4.svg" alt="">
+                        <i class="fa-solid fa-star text-coral-red mt-5 mb-2">
+                            <span class="text-slate-gray text-[10px] ml-1">
+                                (4.5)
+                            </span>
+                        </i>
+                        <h3 class="font-palanquin text-xl font-semibold mb-1">Nike Air Jordan-01</h3>
+                        <p class="font-montserrat font-semibold text-coral-red">$200.20</p>
+                    </div>
+                    <div>
+                        <img src="./assets/images/shoe5.svg" alt="">
+                        <i class="fa-solid fa-star text-coral-red mt-5 mb-2">
+                            <span class="text-slate-gray text-[10px] ml-1">
+                                (4.5)
+                            </span>
+                        </i>
+                        <h3 class="font-palanquin text-xl font-semibold mb-1">Nike Air Jordan-01</h3>
+                        <p class="font-montserrat font-semibold text-coral-red">$200.20</p>
+                    </div>
+                    <div>
+                        <img src="./assets/images/shoe6.svg" alt="">
+                        <i class="fa-solid fa-star text-coral-red mt-5 mb-2">
+                            <span class="text-slate-gray text-[10px] ml-1">
+                                (4.5)
+                            </span>
+                        </i>
+                        <h3 class="font-palanquin text-xl font-semibold mb-1">Nike Air Jordan-01</h3>
+                        <p class="font-montserrat font-semibold text-coral-red">$200.20</p>
+                    </div>
+                    <div>
+                        <img src="./assets/images/shoe7.svg" alt="">
+                        <i class="fa-solid fa-star text-coral-red mt-5 mb-2">
+                            <span class="text-slate-gray text-[10px] ml-1">
+                                (4.5)
+                            </span>
+                        </i>
+                        <h3 class="font-palanquin text-xl font-semibold mb-1">Nike Air Jordan-01</h3>
+                        <p class="font-montserrat font-semibold text-coral-red">$200.20</p>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- Popular Product -->
         <section class="padding">
             
         </section>
