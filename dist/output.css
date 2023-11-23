@@ -559,6 +559,10 @@ video {
   z-index: 10;
 }
 
+.m-auto{
+  margin: auto;
+}
+
 .my-3{
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -574,6 +578,10 @@ video {
 
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 
 .ml-1{
@@ -608,8 +616,12 @@ video {
   margin-top: 2rem;
 }
 
-.mb-6{
-  margin-bottom: 1.5rem;
+.mt-40{
+  margin-top: 10rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
 }
 
 .inline-block{
@@ -636,6 +648,14 @@ video {
   height: 1.25rem;
 }
 
+.h-48{
+  height: 12rem;
+}
+
+.h-32{
+  height: 8rem;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -654,6 +674,22 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-64{
+  width: 16rem;
+}
+
+.w-48{
+  width: 12rem;
+}
+
+.w-32{
+  width: 8rem;
+}
+
+.max-w-lg{
+  max-width: 32rem;
 }
 
 .flex-1{
@@ -696,8 +732,16 @@ video {
   justify-content: space-between;
 }
 
+.justify-evenly{
+  justify-content: space-evenly;
+}
+
 .justify-items-center{
   justify-items: center;
+}
+
+.gap-10{
+  gap: 2.5rem;
 }
 
 .gap-12{
@@ -724,8 +768,14 @@ video {
   gap: 1.5rem;
 }
 
-.gap-10{
-  gap: 2.5rem;
+.gap-x-3{
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.gap-x-5{
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 
 .rounded-2xl{
@@ -791,6 +841,11 @@ video {
      object-fit: contain;
 }
 
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -821,9 +876,9 @@ video {
   padding-bottom: 2rem;
 }
 
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-10{
@@ -837,6 +892,10 @@ video {
 
 .pr-10{
   padding-right: 2.5rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .font-montserrat{
@@ -924,6 +983,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-50{
+  --tw-text-opacity: 1;
+  color: rgb(249 250 251 / var(--tw-text-opacity));
+}
+
 .shadow-2xl{
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -966,6 +1030,15 @@ video {
   .padding-t{
     padding-top: 6rem;
   }
+}
+
+.info-text{
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  line-height: 21.94px;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(109 109 109 / var(--tw-text-opacity));
 }
 
 .paragraph{
@@ -1084,8 +1157,8 @@ video {
     margin-top: 10rem;
   }
 
-  .md\:h-10{
-    height: 2.5rem;
+  .md\:flow-root{
+    display: flow-root;
   }
 
   .md\:flex-row{
@@ -1108,14 +1181,6 @@ video {
 }
 
 @media (min-width: 1024px){
-  .lg\:order-1{
-    order: 1;
-  }
-
-  .lg\:w-2\/5{
-    width: 40%;
-  }
-
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
